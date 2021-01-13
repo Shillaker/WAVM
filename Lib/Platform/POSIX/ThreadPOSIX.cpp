@@ -53,7 +53,7 @@ struct CreateThreadArgs
 
 static constexpr Uptr sigAltStackNumBytes = 65536;
 
-#define ALLOCATE_SIGALTSTACK_ON_MAIN_STACK 1
+#define ALLOCATE_SIGALTSTACK_ON_MAIN_STACK 0
 
 static bool isAlignedLog2(void* pointer, Uptr alignmentLog2)
 {

@@ -213,7 +213,7 @@ namespace WAVM { namespace Runtime {
 		{
 		}
 
-		virtual ~Instance() override;
+		~Instance() override;
 	};
 
 	struct Context : GCObject
@@ -225,7 +225,7 @@ namespace WAVM { namespace Runtime {
 		: GCObject(ObjectKind::context, inCompartment, std::move(inDebugName))
 		{
 		}
-		~Context();
+		~Context() override;
 	};
 
 	struct Compartment : GCObject
